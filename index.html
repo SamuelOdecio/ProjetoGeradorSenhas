@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+  <meta name="keywords" content="Gerador de senhas, generator password">
+  <title>GERADOR DE SENHAS</title>
+  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <img class="logo" src="./assets/logoCaseira.png" alt="Gerador de Senha Logo" />
+  
+  <main class="container-input">
+    <span>Tamanho da senha:  <span id="valor"></span> caracteres</span>
+    <input id="slider" class="slider" type="range" min="5" max="25" value ="15" />
+    <span>Dificuldade da senha:  <span id="dificuldade"></span> </span>
+    <input id="sliderDificuldade" class="sliderDificuldade" type="range" min="1" max="5" value ="3" />
+    
+    <button id="button" class="button-cta" onclick="generatePassword()">GERAR SENHA</button>
+  </main>
+
+  <div id="container-password" onclick=" copyPassword()" class="container-password hide">
+    <span class="title">Sua senha gerada foi: </span>
+    <span id="password" class="password">senha </span>
+    <span class="tooltip">Clique na senha para copiar.</span>
+  </div>
+
+  
+  <script src="script.js">
+  </script>
+
+  <footer>
+	<p>Samuel Odecio © 2022</p>
+ </footer>
+
+
+</body>
+
+
+
+</html>
